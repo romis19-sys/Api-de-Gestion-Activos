@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="GestionActivos.Api/GestionActivos.Api.csproj" />
+  <Project Path="GestionActivos.Application/GestionActivos.Application.csproj" />
+  <Project Path="GestionActivos.Domain/GestionActivos.Domain.csproj" />
+  <Project Path="GestionActivos.Infrastructure/GestionActivos.Infrastructure.csproj" />
+</Solution>
