@@ -285,4 +285,5 @@ C:\Desarrollo de Aplicaciones\Tarea\ProyectoFinalGA\GestionActivos.Api\obj\Debug
 C:\Desarrollo de Aplicaciones\Tarea\ProyectoFinalGA\GestionActivos.Api\obj\Debug\net10.0\GestionActivos.Api.genruntimeconfig.cache
 C:\Desarrollo de Aplicaciones\Tarea\ProyectoFinalGA\GestionActivos.Api\obj\Debug\net10.0\ref\GestionActivos.Api.dll
 C:\Desarrollo de Aplicaciones\Proyecto\ProyectoFinalGA\GestionActivos.Api\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Desarrollo de Aplicaciones\Tarea\ProyectoFinalGA\GestionActivos.Api\obj\Debug\net10.0\GestionActivos.Api.sourcelink.json
 C:\Desarrollo de Aplicaciones\Tarea\ProyectoFinalGA\GestionActivos.Api\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

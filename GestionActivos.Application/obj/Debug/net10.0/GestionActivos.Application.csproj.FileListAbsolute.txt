@@ -28,3 +28,4 @@ C:\Desarrollo de Aplicaciones\Tarea\ProyectoFinalGA\GestionActivos.Application\o
 C:\Desarrollo de Aplicaciones\Tarea\ProyectoFinalGA\GestionActivos.Application\obj\Debug\net10.0\refint\GestionActivos.Application.dll
 C:\Desarrollo de Aplicaciones\Tarea\ProyectoFinalGA\GestionActivos.Application\obj\Debug\net10.0\GestionActivos.Application.pdb
 C:\Desarrollo de Aplicaciones\Tarea\ProyectoFinalGA\GestionActivos.Application\obj\Debug\net10.0\ref\GestionActivos.Application.dll
+C:\Desarrollo de Aplicaciones\Tarea\ProyectoFinalGA\GestionActivos.Application\obj\Debug\net10.0\GestionActivos.Application.sourcelink.json

@@ -36,3 +36,4 @@ C:\Desarrollo de Aplicaciones\Tarea\ProyectoFinalGA\GestionActivos.Infrastructur
 C:\Desarrollo de Aplicaciones\Tarea\ProyectoFinalGA\GestionActivos.Infrastructure\obj\Debug\net10.0\GestionActivos.Infrastructure.pdb
 C:\Desarrollo de Aplicaciones\Tarea\ProyectoFinalGA\GestionActivos.Infrastructure\obj\Debug\net10.0\GestionActivos.Infrastructure.genruntimeconfig.cache
 C:\Desarrollo de Aplicaciones\Tarea\ProyectoFinalGA\GestionActivos.Infrastructure\obj\Debug\net10.0\ref\GestionActivos.Infrastructure.dll
+C:\Desarrollo de Aplicaciones\Tarea\ProyectoFinalGA\GestionActivos.Infrastructure\obj\Debug\net10.0\GestionActivos.Infrastructure.sourcelink.json
