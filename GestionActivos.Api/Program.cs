@@ -53,7 +53,9 @@ var connectionString =
     $"Port={port};" +
     $"Database={database};" +
     $"Username={user};" +
-    $"Password={password};";
+    $"Password={password};" +
+    $"SSL Mode=Require;" +
+    $"Trust Server Certificate=true;";
 
 // registrar ApplicationDbContext
 builder.Services.AddDbContext<ApplicationDbContext>(optios =>
@@ -212,8 +214,6 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-
-
 // Configuración de CORS
 var allowedOrigins = builder.Configuration
     .GetSection("Cors:AllowedOrigins")
@@ -241,31 +241,50 @@ builder.Services.AddCors(options =>
     });
 });
 
-
-
 builder.Services.AddOpenApi();
 
+// Construir la aplicacion
 var app = builder.Build();
 
 //Registrar Middleware para excepciones globales
 app.UseMiddleware<ExceptionMiddleware>();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+// Configuracion para entornos de desarrollo y produccion
+app.UseSwagger();
+app.UseSwaggerUI(options =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "GestionActivos API v1");
+});
 
-app.UseHttpsRedirection();
+app.MapGet("/", context =>
+{
+    context.Response.Redirect("/swagger/index.html");
+    return Task.CompletedTask;
+});
 
+
+app.UseCors("FrontendPolicy");
+
+// Soporte para la autenticacion
+app.UseAuthorization();
 app.UseAuthorization();
 
+
+// Mappear controladores
 app.MapControllers();
+
 
 using (var scope = app.Services.CreateScope())
 {
     await DbInitializer.SeedAsync(scope.ServiceProvider);
 }
 
-app.Run();
+if(app.Environment.IsDevelopment())
+{
+    app.Run();
+}
+else
+{
+    var apiPort = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+    app.Run($"http://0.0.0.0:{apiPort}");
+}

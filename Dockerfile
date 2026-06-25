@@ -8,7 +8,7 @@ WORKDIR /src
 COPY . .
 
 # Restaurar dependencias
-RUN dotnet restore "ProyectoFinalGA.Solution.slnx"
+RUN dotnet restore "ProyectoFinalGA.slnx"
 
 # Publicar la API
 WORKDIR "/src/GestionActivos.Api"
